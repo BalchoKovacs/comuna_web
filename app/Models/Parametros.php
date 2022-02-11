@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Parametros extends Model
+{
+    use SoftDeletes;
+    public $table = 'parametros';
+    protected $dates = ['deleted_at'];
+    public $fillable = [
+        'id_tipo_parametro',
+        'nombre'
+    ];
+}

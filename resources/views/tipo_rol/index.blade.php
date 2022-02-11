@@ -1,0 +1,73 @@
+@extends('layouts.app')
+
+@section('content')
+
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Tipo Rol</h1>
+    </div>
+    <div class="col-sm-6 text-right">
+     <a class="btn btn-dark" href="{{ route('tipo_rol.create') }}">Agregar Nuevo Rol</a>
+ </div>
+</div>
+</div>
+</section>
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Tabla de Tipo de Roles</h3>
+                </div>
+                @include('sweetalert::alert')
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="text-center table table-striped table-bordered dt-responsive nowrap" id="example">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Nombre</th>
+                                    <th class="no-export">Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                             @foreach($data as $key=>$rol)
+                                    <tr>
+                                    <td> {{$key+1}}</td>
+                                    <td>{{ $rol->rol }}</td>
+
+
+                                    <td>
+                                        {!! Form::open(['route' => ['tipo_rol.destroy', $rol->id], 'method' => 'delete']) !!}
+
+                                            <a href="{{ route('tipo_rol.edit', [$rol->id]) }}" class='btn btn-success '><i class="fas fa-edit"></i></a>
+                                            
+                                            {!! Form::button('<i class="fas fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('¿Estás seguro de eliminar este registro?')"]) !!}
+
+                                        {!! Form::close() !!}
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
+
+
+
+

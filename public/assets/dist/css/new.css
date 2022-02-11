@@ -1,0 +1,290 @@
+/*dropzone*/
+.hidden{
+    display: none!important;
+}
+.dropzone-wrapper {
+  border: 1px dashed #c1c1c1;
+  color: #9c9c9c;
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+.dropzone-wrapper input{
+  height: 100% !important;
+}
+.dropzone-desc {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  text-align: center;
+  width: 95%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 14px;
+}
+
+.dropzone,
+.dropzone:focus {
+  position: absolute;
+  outline: none !important;
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.dropzone-wrapper:hover,
+.dropzone-wrapper.dragover{
+  background: #ecf0f5;
+}
+
+.preview-zone{
+  text-align: center;
+}
+
+.box-header.with-border{
+  border-bottom: unset;
+}
+.box{
+  box-shadow: unset;
+}
+.remove-preview i{
+  padding-right: 5px;
+}
+.box.box-solid>.box-header .btn:hover, .box.box-solid>.box-header a:hover{
+  background: #ce5259;
+  border-color: #ce5259;
+}
+.box-tools .btn-danger{
+  background: #ef4d56 !important;
+  color: #fff !important;
+  padding: 4px 10px !important;
+  border: 1px solid #ef4d56 !important;  
+  outline: none;
+}
+.box-header>.box-tools{
+  position: unset;
+
+}
+.producto .img-dropzone {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+#nombre-producto{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #3065f7;
+}
+/*Fin dropzone*/
+.dropdown-menu-right {
+    right: -7px;
+}
+
+.dropdown-menu-lg {
+    min-width: 160px;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu:hover {
+    background: #e0e0e0;
+}
+
+.table .btn-group a {
+    margin-right: 6px;
+    background-color: #005cbf;
+    color: #fff;
+    border-color: #005cbf;
+}
+
+.card-body {
+    font-size: 14px;
+}
+
+.nav-treeview>.nav-item.has-treeview>.nav-link.active {
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+
+.nav-treeview>.nav-item.has-treeview>.nav-treeview>.nav-item>.nav-link.active {
+    color: #343a40 !important;
+    background-color: rgba(255, 255, 255, .9) !important;
+}
+
+.nav-treeview>.nav-item>.nav-link.active {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.form-control {
+    /* height: calc(2.6rem + 2px) !important; */
+}
+
+#tablaprueba tbody tr i {
+    cursor: pointer;
+}
+
+.total_pagos {
+    padding: 12px 10px;
+}
+
+#tabla_detalle_pagos {
+    display: none;
+}
+
+tr td .fa-dollar-sign:hover {
+    cursor: pointer;
+    color: #108a0e;
+}
+
+.bg-balcho {
+    background-image: linear-gradient(#ffff, black, #ffff)
+}
+
+#home a,
+#condominios a {
+    color: #000;
+}
+
+.info-box:hover {
+    background: #ececec;
+}
+
+#porcentajeP span,
+#pendienteP span,
+#tipoMoraP span,
+#moraDia span,
+#fechaV span,
+#diasT span {
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+input#montoP,
+input#totalaP {
+    background-color: #0077ff4f;
+}
+
+div.card.card-incidencia {
+    width: 25%;
+    height: fit-content;
+    background-color: #0000001a;
+    box-shadow: 0 0 4px 0px #000;
+}
+
+section.cont-incidencia-detail {
+    width: 70%;
+}
+
+div.cont-card {
+    padding: 15px 1.2rem;
+}
+
+.cont-card .img-seguimiento {
+    padding: 1rem 1rem 0px 1rem;
+}
+
+.card .card-title {
+    font-weight: 600;
+}
+
+.img-seguimiento .card-img-top {
+    box-shadow: 0 0 1px 0px #000;
+    border-radius: 0.2rem;
+}
+
+.select2-container .select2-selection--single {
+    height: 44px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    margin-top: -1px !important;
+}
+
+#register_excel span.select2.select2-container,
+#export_excel span.select2.select2-container {
+    width: 100% !important;
+}
+
+.alert-dark {
+    background: #0e5a96 !important;
+    border-color: unset;
+}
+
+.user-panel .image {
+    padding: 0;
+}
+
+.user-panel img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+}
+
+.brand-link .brand-image2 {
+    float: left;
+    line-height: .8;
+    margin-left: .8rem;
+    margin-top: -3px;
+    max-height: 33px;
+    width: auto;
+}
+
+.navbar-badge {
+    font-size: 0.68rem;
+}
+
+.img-min {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#detalle_agua label {
+    font-weight: unset;
+}
+
+.info-box .info-box-text {
+    white-space: unset;
+}
+
+.card .card-body .card-text.cant {
+    margin-bottom: 1px;
+}
+
+.card .img-condominio {
+    object-fit: cover;
+}
+
+table .img-cover {
+    width: 45px;
+    height: 35px;
+    object-fit: cover;
+}
+
+#modal_notification .dataTables_length {
+    display: none;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 500 !important;
+}
+
+.form-control.proy {
+    width: 85px;
+}
+[class*=sidebar-dark-] {
+    background-color: #7c4cff!important;
+    
+}
+.btn-dark {
+    color: #fff;
+    background-color: #ff4081!important;
+    border-color: #FF4081!important;
+}
